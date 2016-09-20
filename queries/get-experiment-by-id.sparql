@@ -1,0 +1,5 @@
+#get list of experiments with specificId
+SELECT *
+WHERE {?x <http://kiv.zcu.cz/eegbase#experimentId> ?fname . 
+FILTER (?fname=33)}
+

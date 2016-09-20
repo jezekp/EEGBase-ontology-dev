@@ -1,0 +1,3300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://kiv.zcu.cz/eegbase#"
+     xml:base="http://kiv.zcu.cz/eegbase"
+     xmlns:semantic="http://thewebsemantic.com#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:this="http://kiv.zcu.cz/eegbase#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://kiv.zcu.cz/eegbase"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://thewebsemantic.com#javaclass -->
+
+    <owl:AnnotationProperty rdf:about="http://thewebsemantic.com#javaclass">
+        <rdfs:comment>This property determines the Java class that was mapped into declaring resource.</rdfs:comment>
+        <rdfs:label>Java class</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_1"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_2"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_3 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_3"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_4 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_4"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_5 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_5"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_6 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_6"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#_7 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#_7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUINamespaceTags -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#GUINamespaceTags"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#additionalNamespaces -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#additionalNamespaces"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#attributes -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#attributes"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#children -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#children"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#descendants -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#descendants"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#elasticExperiment -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#elasticExperiment">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#fileUrl -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#fileUrl">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#guiHelper -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#guiHelper">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#linkedSection -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#linkedSection">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#linkingSections -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#linkingSections">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#map -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#map">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#mapping -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#mapping">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#maxDate -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#maxDate"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#maxTime -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#maxTime"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#metadata -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#metadata"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#minDate -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#minDate"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#minTime -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#minTime"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#namespace -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#namespace"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#parent -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#parent">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#properties -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#properties">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#propertyNames -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#propertyNames">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#repository -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#repository">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#rootSection -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#rootSection">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#sections -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#sections">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#valueDefinitions -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#valueDefinitions">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#valueIds -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#valueIds">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#valueReferences -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#valueReferences">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#valueUncertainties -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#valueUncertainties">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#values -->
+
+    <owl:ObjectProperty rdf:about="http://kiv.zcu.cz/eegbase#values">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#URI -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#URI">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#contentSize -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#contentSize">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#datatype -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#datatype">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#defaultValue -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#defaultValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#definition -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#definition">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#dependency -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#dependency">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#dependencyValue -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#dependencyValue">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#documentAuthor -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#documentAuthor">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#documentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#documentDate">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#documentVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#documentVersion">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#editable -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#editable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#empty -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#empty">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#endTime">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#environmentNote -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#environmentNote">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#experimentId -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#experimentId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#finishDate -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#finishDate">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#groupId -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#groupId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#include -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#include">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#level -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#level">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#link -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#link">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#linked -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#linked">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#list -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#list">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#listActive -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#listActive">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#listUnits -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#listUnits">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#listUnitsActive -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#listUnitsActive">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#maxLength -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#maxLength">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#maxValue -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#maxValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#minLength -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#minLength">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#minValue -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#minValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#name -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#name">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#namespacePrefix -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#namespacePrefix">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#namespaceURI -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#namespaceURI">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#nullProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#nullProperty">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#order -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#order">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#path -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#path">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#prefix -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#prefix">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#privateExperiment -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#privateExperiment">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#qualifiedName -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#qualifiedName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#reference -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#reference">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#required -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#required">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#root -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#root">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#rootElement -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#rootElement">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#startDate">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#startTime">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#stepSize -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#stepSize">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#temperature">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#terminology -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#terminology">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#text -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#text">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#textNormalize -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#textNormalize">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#textTrim -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#textTrim">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#type -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#type">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#unit -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#unit">
+        <rdfs:domain rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#userId -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#userId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#value -->
+
+    <owl:DatatypeProperty rdf:about="http://kiv.zcu.cz/eegbase#value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Experiment -->
+
+    <owl:Class rdf:about="http://kiv.zcu.cz/eegbase#Experiment">
+        <semantic:javaclass>cz.zcu.kiv.eegdatabase.data.pojo.Experiment</semantic:javaclass>
+    </owl:Class>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property -->
+
+    <owl:Class rdf:about="http://kiv.zcu.cz/eegbase#Property">
+        <semantic:javaclass>odml.core.Property</semantic:javaclass>
+    </owl:Class>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section -->
+
+    <owl:Class rdf:about="http://kiv.zcu.cz/eegbase#Section">
+        <semantic:javaclass>odml.core.Section</semantic:javaclass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1030557729 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1030557729"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1037598303 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1037598303"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1070320900 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1070320900"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1077470040 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1077470040"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1123441102 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1123441102"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1153766106 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1153766106"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1190773468 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1190773468"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1192932828 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1192932828"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1247285599 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1247285599"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1326702267 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1326702267"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1339432323 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1339432323"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1365710218 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1365710218"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1371589849 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1371589849"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1406392807 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1406392807"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1430656219 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1430656219"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1519734689 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1519734689"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1558438276 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1558438276"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1576408237 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1576408237"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1627197352 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1627197352"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1658239300 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1658239300"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1695230079 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1695230079"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1718959032 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1718959032"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1820373352 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1820373352"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1829932785 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1829932785"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1842481173 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1842481173"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1850329329 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1850329329"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1858136231 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1858136231"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1879658515 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1879658515"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1920751056 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1920751056"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1997306010 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1997306010"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_1999114831 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_1999114831"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_2038900621 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_2038900621"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_2077171595 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_2077171595"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_2098261983 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_2098261983"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_2100328814 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_2100328814"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_2125072895 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_2125072895"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_289659072 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_289659072"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_405259987 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_405259987"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_429738776 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_429738776"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_586454052 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_586454052"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_642482466 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_642482466"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_687713135 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_687713135"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_722258365 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_722258365"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_764734293 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_764734293"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_779424369 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_779424369"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_898610278 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_898610278"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_913269664 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_913269664"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#DescendantIterator_96060350 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#DescendantIterator_96060350"/>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1002316844 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1002316844">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1077470040"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_101650519 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_101650519">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1190773468"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_10420605 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_10420605">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1192932828"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1075557184 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1075557184">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1519734689"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1088816488 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1088816488">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1030557729"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1104680652 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1104680652">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1371589849"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1186414790 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1186414790">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_687713135"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1221125245 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1221125245">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_2098261983"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1231034100 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1231034100">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1999114831"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1248661141 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1248661141">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1037598303"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1257617739 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1257617739">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1247285599"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1285252157 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1285252157">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1842481173"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1347464881 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1347464881">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1627197352"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_135123083 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_135123083">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1123441102"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1388309817 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1388309817">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_913269664"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1405223813 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1405223813">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1718959032"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1456850776 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1456850776">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1829932785"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1510403822 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1510403822">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_2100328814"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1528831533 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1528831533">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_429738776"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1541184026 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1541184026">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1879658515"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1560339028 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1560339028">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1695230079"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1567008808 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1567008808">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_2125072895"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_159754688 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_159754688">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_642482466"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1660180894 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1660180894">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_405259987"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1678399235 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1678399235">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1658239300"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1717094779 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1717094779">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1326702267"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1726083553 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1726083553">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_2077171595"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1730795881 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1730795881">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1820373352"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1780885210 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1780885210">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1858136231"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_1915464807 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_1915464807">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_289659072"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_199635156 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_199635156">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_898610278"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_2006746263 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_2006746263">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1153766106"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_2116184013 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_2116184013">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_722258365"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_2132627981 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_2132627981">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1576408237"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_329021625 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_329021625">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_96060350"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_344214456 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_344214456">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_2038900621"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_406181968 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_406181968">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1997306010"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_411987071 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_411987071">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_779424369"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_468112812 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_468112812">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1339432323"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_486414773 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_486414773">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1850329329"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_562294668 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_562294668">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1558438276"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_637671791 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_637671791">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1406392807"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_655028946 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_655028946">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1070320900"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_692192756 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_692192756">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_764734293"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_774340296 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_774340296">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_586454052"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_796363646 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_796363646">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1365710218"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">required</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:required</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_988439743 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_988439743">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1920751056"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editable</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:editable</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Element_998376890 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Element_998376890">
+        <additionalNamespaces>
+            <rdf:Description/>
+        </additionalNamespaces>
+        <attributes>
+            <rdf:Description/>
+        </attributes>
+        <children>
+            <rdf:Description/>
+        </children>
+        <descendants rdf:resource="http://kiv.zcu.cz/eegbase#DescendantIterator_1430656219"/>
+        <namespace rdf:resource="http://kiv.zcu.cz/eegbase#Namespace_292999922"/>
+        <contentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</contentSize>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</name>
+        <namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</namespacePrefix>
+        <namespaceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</namespaceURI>
+        <qualifiedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui:order</qualifiedName>
+        <rootElement rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rootElement>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</text>
+        <textNormalize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textNormalize>
+        <textTrim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</textTrim>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#ExperimentElastic_288 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#ExperimentElastic_288">
+        <metadata rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <experimentId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">288</experimentId>
+        <groupId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</groupId>
+        <userId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</userId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_1017916185 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_1017916185">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_1066393004 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_1066393004">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_107137910 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_107137910">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_1128138248 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_1128138248">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_141760081 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_141760081">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_1515367969 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_1515367969">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_1713272514 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_1713272514">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_1837936642 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_1837936642">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_2014368518 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_2014368518">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_2102079002 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_2102079002">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_539651819 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_539651819">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_632103371 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_632103371">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_661044896 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_661044896">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_680411700 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_680411700">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_929570283 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_929570283">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#GUIHelper_97033092 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#GUIHelper_97033092">
+        <GUINamespaceTags>
+            <rdf:Description/>
+        </GUINamespaceTags>
+        <editable rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</editable>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <listActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listActive>
+        <listUnitsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</listUnitsActive>
+        <order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</order>
+        <required rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Namespace_292999922 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Namespace_292999922">
+        <URI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.g-node.org/guiml</URI>
+        <prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gui</prefix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-1492575486 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-1492575486">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_2014368518"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_671965469"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-155436526 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-155436526">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_1128138248"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end-time</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datetime</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-16T14:59:00Z</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-2120815174 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-2120815174">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_680411700"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">int</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-444708826 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-444708826">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_107137910"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_671965469"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-682351591 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-682351591">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_1515367969"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">start-time</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datetime</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-16T14:29:00Z</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-774255556 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-774255556">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_2102079002"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_460468665"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gain</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">float</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2002/07/owl#real">-1.0</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_-836751166 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_-836751166">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_141760081"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_200228990"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_1195489313 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_1195489313">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_929570283"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_1375517493"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reject-condition</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cond</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_1510196836 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_1510196836">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_632103371"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment-note</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_1681403531 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_1681403531">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_97033092"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">private-experiment</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boolean</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_1852697472 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_1852697472">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_1066393004"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-group</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERP</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_2052775304 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_2052775304">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_1713272514"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_460468665"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filter</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NotKnown</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_2121200090 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_2121200090">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_1837936642"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scenario-title</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p300 number sequence</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_624827684 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_624827684">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_661044896"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_1375517493"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compensation</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_715657621 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_715657621">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_1017916185"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_460468665"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sampling-rate</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">float</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2002/07/owl#real">-1.0</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Property_794340239 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Property_794340239">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Property"/>
+        <guiHelper rdf:resource="http://kiv.zcu.cz/eegbase#GUIHelper_539651819"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_200228990"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></definition>
+        <dependency rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependency>
+        <dependencyValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dependencyValue>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age</name>
+        <nullProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nullProperty>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">int</type>
+        <unit rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></unit>
+        <valueDefinitions rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueDefinitions>
+        <valueIds rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueIds>
+        <valueReferences rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueReferences>
+        <valueUncertainties rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></valueUncertainties>
+        <values rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</values>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section_1375517493 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Section_1375517493">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_1195489313"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_624827684"/>
+        <propertyNames>
+            <rdf:Description>
+                <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compensation</rdf:_1>
+                <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reject-condition</rdf:_2>
+            </rdf:Description>
+        </propertyNames>
+        <rootSection rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</level>
+        <linked rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</linked>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact</name>
+        <path rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Artifact</path>
+        <root rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</root>
+        <terminology rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</terminology>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section_200228990 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Section_200228990">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-836751166"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_794340239"/>
+        <propertyNames>
+            <rdf:Description>
+                <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdf:_1>
+                <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age</rdf:_2>
+            </rdf:Description>
+        </propertyNames>
+        <rootSection rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</level>
+        <linked rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</linked>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject</name>
+        <path rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Subject</path>
+        <root rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</root>
+        <terminology rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</terminology>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section_2108105319 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Section_2108105319">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <propertyNames>
+            <rdf:Description/>
+        </propertyNames>
+        <rootSection rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <sections rdf:resource="http://kiv.zcu.cz/eegbase#Section_1375517493"/>
+        <sections rdf:resource="http://kiv.zcu.cz/eegbase#Section_200228990"/>
+        <sections rdf:resource="http://kiv.zcu.cz/eegbase#Section_429068074"/>
+        <sections rdf:resource="http://kiv.zcu.cz/eegbase#Section_460468665"/>
+        <sections rdf:resource="http://kiv.zcu.cz/eegbase#Section_671965469"/>
+        <documentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-16T07:00:00Z</documentDate>
+        <documentVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</documentVersion>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</level>
+        <linked rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</linked>
+        <path rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></path>
+        <root rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</root>
+        <terminology rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</terminology>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section_429068074 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Section_429068074">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-155436526"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-2120815174"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-682351591"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_1510196836"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_1681403531"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_1852697472"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_2121200090"/>
+        <propertyNames>
+            <rdf:Description>
+                <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">private-experiment</rdf:_1>
+                <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">start-time</rdf:_2>
+                <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">end-time</rdf:_3>
+                <rdf:_4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdf:_4>
+                <rdf:_5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment-note</rdf:_5>
+                <rdf:_6 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-group</rdf:_6>
+                <rdf:_7 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scenario-title</rdf:_7>
+            </rdf:Description>
+        </propertyNames>
+        <rootSection rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</level>
+        <linked rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</linked>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment</name>
+        <path rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Experiment</path>
+        <root rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</root>
+        <terminology rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</terminology>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section_460468665 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Section_460468665">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-774255556"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_2052775304"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_715657621"/>
+        <propertyNames>
+            <rdf:Description>
+                <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filter</rdf:_1>
+                <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gain</rdf:_2>
+                <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sampling-rate</rdf:_3>
+            </rdf:Description>
+        </propertyNames>
+        <rootSection rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</level>
+        <linked rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</linked>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digitization</name>
+        <path rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Digitization</path>
+        <root rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</root>
+        <terminology rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</terminology>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digitization</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Section_671965469 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Section_671965469">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Section"/>
+        <parent rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-1492575486"/>
+        <properties rdf:resource="http://kiv.zcu.cz/eegbase#Property_-444708826"/>
+        <propertyNames>
+            <rdf:Description>
+                <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdf:_1>
+                <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdf:_2>
+            </rdf:Description>
+        </propertyNames>
+        <rootSection rdf:resource="http://kiv.zcu.cz/eegbase#Section_2108105319"/>
+        <empty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</empty>
+        <level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</level>
+        <linked rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</linked>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weather</name>
+        <path rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Weather</path>
+        <root rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</root>
+        <terminology rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</terminology>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weather</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kiv.zcu.cz/eegbase#Experiment/288 -->
+
+    <owl:NamedIndividual rdf:about="http://kiv.zcu.cz/eegbase#Experiment/288">
+        <rdf:type rdf:resource="http://kiv.zcu.cz/eegbase#Experiment"/>
+        <elasticExperiment rdf:resource="http://kiv.zcu.cz/eegbase#ExperimentElastic_288"/>
+        <endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-17T02:59:00Z</endTime>
+        <environmentNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></environmentNote>
+        <experimentId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">288</experimentId>
+        <finishDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-17T02:59:00Z</finishDate>
+        <privateExperiment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</privateExperiment>
+        <startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-17T02:29:00Z</startDate>
+        <startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-17T02:29:00Z</startTime>
+        <temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</temperature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://kiv.zcu.cz/eegbase">
+        <rdfs:comment>This ontology contains data from EEG/ERP experiments.</rdfs:comment>
+        <rdfs:seeAlso>http://eegdatabase.kiv.zcu.cz/home.html</rdfs:seeAlso>
+        <rdfs:label>EEG/ERP Database</rdfs:label>
+        <owl:versionInfo>14 September 2016</owl:versionInfo>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://kiv.zcu.cz/eegbase#valueIds">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

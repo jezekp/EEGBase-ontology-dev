@@ -1,0 +1,14 @@
+#list all properties
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX eeg: <http://kiv.zcu.cz/eegbase#>
+
+select ?s ?p ?o {
+ ?s ?p ?o .
+ FILTER (?s = ?exp)
+ {
+ select ?exp {
+   ?exp a eeg:Property .
+   }
+  }
+
+}

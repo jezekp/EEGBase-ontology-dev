@@ -1,0 +1,6 @@
+#list all rdf:types Experiment --> list all experiments
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+select ?exp {
+   ?exp rdf:type <http://kiv.zcu.cz/eegbase#Experiment> .
+  }

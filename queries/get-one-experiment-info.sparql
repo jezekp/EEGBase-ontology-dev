@@ -1,0 +1,5 @@
+#get one experiment info
+select * {
+    <http://kiv.zcu.cz/eegbase#Experiment/1> ?predicate ?object
+}
+

@@ -1,0 +1,4 @@
+#get list of all experiments
+SELECT ?x ?fname
+WHERE {?x <http://kiv.zcu.cz/eegbase#experimentId> ?fname}
+
