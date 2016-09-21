@@ -1,14 +1,14 @@
 #List experiments with metadata
 PREFIX eeg: <http://kiv.zcu.cz/eegbase#>
 
-select ?elastic ?name ?values {
+select ?elastic ?properties ?name ?values {
     ?exp eeg:elasticExperiment ?elastic .
     ?elastic eeg:metadata ?metadata .
-    ?metadata eeg:sections ?section .
-    ?section eeg:properties ?properties .
+    ?metadata eeg:sections* ?sections .
+    ?sections eeg:properties* ?properties .
     ?properties eeg:name ?name . 
     ?properties eeg:values ?values .
-} 		
+}		
  
 
 
