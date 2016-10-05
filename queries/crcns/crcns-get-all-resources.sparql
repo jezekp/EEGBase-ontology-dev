@@ -1,8 +1,12 @@
-PREFIX crcns: <http://cz.zcu.kiv.data.crcns.xml#>
+#get descriptions of all Resources
 
-select  ?titles {
-    ?titles a crcns:Title .
-    ?
+PREFIX crcns: <http://cz.zcu.kiv.data.crcns.xml#>
+select  ?publisher ?val{
+    ?descriptions crcns:descriptions ?description .
+    ?descriptions crcns:publisher ?publisher.
+    ?description crcns:description ?description1 .
+    ?description1 crcns:value ?val .
+
 }		
  
 

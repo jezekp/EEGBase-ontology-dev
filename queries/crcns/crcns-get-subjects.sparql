@@ -1,0 +1,16 @@
+#get all subjects
+PREFIX crcns: <http://cz.zcu.kiv.data.crcns.xml#>
+
+select  ?identifierValue ?subjectValue {
+    ?resources crcns:subjects ?subjects .
+    ?resources crcns:identifier ?identifier .
+    ?identifier crcns:value ?identifierValue .
+    ?subjects crcns:subject ?subject .
+    ?subject ?p ?subjectValue
+}		
+ 
+
+
+
+
+
