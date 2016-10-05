@@ -1,0 +1,12 @@
+PREFIX crcns: <http://cz.zcu.kiv.data.crcns.xml#>
+
+select  ?titles {
+    ?titles a crcns:Title .
+    ?
+}		
+ 
+
+
+
+
+
