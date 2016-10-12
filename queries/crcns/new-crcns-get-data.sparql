@@ -1,0 +1,16 @@
+#get all data 
+
+PREFIX crcns: <http://cz.zcu.kiv.data.crcns.json#>
+select  ?type ?id ?name	?summary{
+    ?data crcns:type ?type .
+    ?data crcns:id ?id .
+    ?data crcns:attributes ?attributes .
+    ?attrubutes crcns:name ?name .
+    ?attrubutes crcns:summary ?summary .
+}		
+ 
+
+
+
+
+
