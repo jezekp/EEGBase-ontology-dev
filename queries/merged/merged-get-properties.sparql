@@ -1,0 +1,32 @@
+#List experiments with metadata
+PREFIX eeg: <http://kiv.zcu.cz/eegbase#>
+PREFIX crcns: <http://cz.zcu.kiv.data.crcns.json#>
+prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+select ?name ?values ?year ?label ?doi ?desc ?summary {
+    {
+?exp eeg:elasticExperiment ?elastic .
+    ?elastic eeg:metadata ?metadata .
+    ?metadata eeg:sections* ?sections .
+    ?sections eeg:properties* ?properties .
+    ?properties eeg:name ?name . 
+    ?properties eeg:values ?values .
+}
+union
+{
+    ?exp crcns:type ?type .
+    ?exp crcns:id ?id .
+    ?exp crcns:attributes ?attributes .
+    ?attrubutes crcns:name ?name .
+    ?attrubutes crcns:summary ?summary .
+    ?attrubutes crcns:year ?year .
+    ?attrubutes crcns:format ?format .
+    ?format rdfs:member ?label .
+    ?attrubutes crcns:doi ?doi .
+    ?attrubutes crcns:desc ?desc .
+}
+}		
+ 
+
